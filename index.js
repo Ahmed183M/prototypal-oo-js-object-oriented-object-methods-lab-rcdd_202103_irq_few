@@ -1,11 +1,10 @@
 function BoardMember(name, homeState, training){
-  return(
       this.name = name,
       this.homeState = homeState,
       this.training = training
-    
-    
-    BoardMember.prototype.veto = function(){
+}
+
+BoardMember.prototype.veto = function(){
       return "No, I must disagree";
     }
     
@@ -24,5 +23,3 @@ function BoardMember(name, homeState, training){
     BoardMember.prototype.sayHi = function(){
       return `Hi, my name is ${this.name}. I am from ${this.homeState}, and I was trained in ${this.training}`;
     }
-    )
-}
